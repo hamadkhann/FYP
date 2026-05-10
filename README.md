@@ -4,6 +4,10 @@
 
 ### *Breaking Communication Barriers with AI-Powered Sign Language Recognition*
 
+**Final Year Project · [Hamad Khan](https://github.com/hamadkhann)**
+
+This repository is maintained for coursework and builds on the open-source **[ASL Recognition System](https://github.com/Muhib-Mehdi/ASL-Recognition-System)** by Muhib Mehdi (MIT). Upstream credit is preserved in [Acknowledgments](#-acknowledgments) and [LICENSE](LICENSE).
+
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16.1-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
@@ -38,7 +42,7 @@
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
-- [👨‍💻 Developer](#-developer)
+- [👨‍💻 Project author](#-project-author)
 
 ---
 
@@ -328,10 +332,10 @@ sequenceDiagram
 
 ```bash
 # Clone the repository
-git clone https://github.com/Muhib-Mehdi/ASL-Recognition-System.git
+git clone https://github.com/hamadkhann/FYP.git
 
 # Navigate to project directory
-cd ASL-Recognition-System
+cd FYP
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -1414,7 +1418,7 @@ cap_width = int(os.getenv('RESOLUTION_WIDTH', 960))
 
 ### 🎯 Community Requests
 
-Vote for features on our [GitHub Discussions](https://github.com/Muhib-Mehdi/ASL-Recognition-System/discussions)!
+Use [GitHub Issues](https://github.com/hamadkhann/FYP/issues) for questions or suggestions about this FYP repository.
 
 ---
 
@@ -1588,7 +1592,7 @@ When reporting bugs, please include:
 
 <div align="center">
 
-[![Contributors](https://contrib.rocks/image?repo=Muhib-Mehdi/ASL-Recognition-System)](https://github.com/Muhib-Mehdi/ASL-Recognition-System/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=hamadkhann/FYP)](https://github.com/hamadkhann/FYP/graphs/contributors)
 
 *Thank you to all our contributors!*
 
@@ -1605,7 +1609,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Muhib Mehdi
+Copyright (c) 2025 Muhib Mehdi
+Copyright (c) 2026 Hamad Khan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1654,58 +1659,25 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Project author
 
 <div align="center">
 
-### **Muhib Mehdi**
+### **Hamad Khan**
 
-*Passionate about leveraging AI for social good and accessibility*
+*Final Year Project — ASL recognition and accessibility tooling*
 
-[![GitHub](https://img.shields.io/badge/GitHub-Muhib--Mehdi-181717?style=for-the-badge&logo=github)](https://github.com/Muhib-Mehdi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/muhib-mehdi-677bb7391)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhibmehdi46@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://Muhib-Mehdi.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-hamadkhann-181717?style=for-the-badge&logo=github)](https://github.com/hamadkhann)
 
----
-
-### 🌟 About Me
-
-I'm a machine learning engineer and accessibility advocate dedicated to building technology that makes a difference. This ASL Recognition System represents my commitment to breaking down communication barriers and promoting inclusivity through AI.
-
-**Areas of Expertise:**
-- 🤖 Deep Learning & Computer Vision
-- 🧠 Natural Language Processing
-- ♿ Accessibility Technology
-- 📊 Data Science & Analytics
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hamadkhann1010@gmail.com)
 
 ---
 
-### 💬 Get in Touch
+### 💬 Contact
 
-Have questions, suggestions, or collaboration ideas?
-
-- 📧 **Email**: muhibmehdi24@gmail.com
-- 💼 **LinkedIn**: [Muhib Mehdi](https://www.linkedin.com/in/muhib-mehdi-677bb7391)
-- 🐙 **GitHub**: [@Muhib-Mehdi](https://github.com/Muhib-Mehdi)
-- 🌐 **Website**: [Website](https://muhibmehdi.github.io)
-
----
-
-### ⭐ Support This Project
-
-If you find this project helpful, please consider:
-
-- ⭐ **Starring** the repository
-- 🍴 **Forking** for your own projects
-- 📢 **Sharing** with others
-- 🐛 **Reporting** bugs and issues
-- 💡 **Suggesting** new features
-- 🤝 **Contributing** code or documentation
-
-<a href="https://buymeacoffee.com/muhib.mehdi" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50">
-</a>
+- 📧 **Email**: hamadkhann1010@gmail.com
+- 🐙 **GitHub**: [@hamadkhann](https://github.com/hamadkhann)
+- 📦 **This repository**: [github.com/hamadkhann/FYP](https://github.com/hamadkhann/FYP)
 
 </div>
 
@@ -1715,6 +1687,7 @@ If you find this project helpful, please consider:
 
 Special thanks to:
 
+- **[Muhib Mehdi](https://github.com/Muhib-Mehdi)** — Original **[ASL Recognition System](https://github.com/Muhib-Mehdi/ASL-Recognition-System)** codebase and documentation (MIT), which this FYP extends.
 - **Google MediaPipe Team** - For the incredible hand tracking solution
 - **TensorFlow Team** - For the powerful ML framework
 - **OpenCV Community** - For computer vision tools
@@ -1727,14 +1700,14 @@ Special thanks to:
 
 <div align="center">
 
-![GitHub Stars](https://img.shields.io/github/stars/Muhib-Mehdi/ASL-Recognition-System?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/Muhib-Mehdi/ASL-Recognition-System?style=social)
-![GitHub Watchers](https://img.shields.io/github/watchers/Muhib-Mehdi/ASL-Recognition-System?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/hamadkhann/FYP?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/hamadkhann/FYP?style=social)
+![GitHub Watchers](https://img.shields.io/github/watchers/hamadkhann/FYP?style=social)
 
-![GitHub Issues](https://img.shields.io/github/issues/Muhib-Mehdi/ASL-Recognition-System)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Muhib-Mehdi/ASL-Recognition-System)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/Muhib-Mehdi/ASL-Recognition-System)
-![GitHub Repo Size](https://img.shields.io/github/repo-size/Muhib-Mehdi/ASL-Recognition-System)
+![GitHub Issues](https://img.shields.io/github/issues/hamadkhann/FYP)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/hamadkhann/FYP)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/hamadkhann/FYP)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/hamadkhann/FYP)
 
 </div>
 
@@ -1750,7 +1723,7 @@ Special thanks to:
 
 ---
 
-**© 2024 Muhib Mehdi. All Rights Reserved.**
+**© 2026 Hamad Khan (FYP).** Original upstream project © Muhib Mehdi; see [LICENSE](LICENSE).
 
 [⬆ Back to Top](#-asl-recognition-system)
 

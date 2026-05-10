@@ -1,11 +1,16 @@
 opencv-python
-mediapipe
-tensorflow==2.16.1
+mediapipe==0.10.9
+# Keep TensorFlow compatible with MediaPipe's protobuf constraint on Windows.
+tensorflow==2.13.0
 Pillow
-numpy
+# NumPy 2.x breaks many compiled wheels (e.g. OpenCV) in this stack.
+numpy<=1.24.3
+# MediaPipe 0.10.x requires protobuf < 4.
+protobuf<4
 pandas
 seaborn
 scikit-learn
 matplotlib
 customtkinter
 pyttsx3
+flask

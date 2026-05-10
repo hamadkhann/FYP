@@ -83,15 +83,14 @@ def main():
 
     #  ########################################################################
     mode = 0
+    window_name = "Hand Gesture Recognition"
 
     while True:
         fps = cvFpsCalc.get()
 
-        # Process Key (ESC: end) #################################################
-        key = cv.waitKey(10)
-        if key == 27:  # ESC
-            break
-        number, mode = select_mode(key, mode)
+        # Default key state for this frame. Key is processed after imshow.
+        key = -1
+        number = -1
 
         # Camera capture #####################################################
         ret, image = cap.read()
@@ -122,9 +121,11 @@ def main():
                 cv.LINE_AA,
             )
 
-            cv.imshow("Hand Gesture Recognition", loading_img)
+            cv.imshow(window_name, loading_img)
 
             key = cv.waitKey(1000)
+            if key == 27 or cv.getWindowProperty(window_name, cv.WND_PROP_VISIBLE) < 1:
+                break
 
             # Looping through each folder of the dataset
             imglabel = -1
@@ -209,7 +210,11 @@ def main():
             debug_image = draw_info(debug_image, fps, mode, number)
 
             # Screen reflection #############################################################
-            cv.imshow("Hand Gesture Recognition", debug_image)
+            cv.imshow(window_name, debug_image)
+            key = cv.waitKey(10)
+            if key == 27 or cv.getWindowProperty(window_name, cv.WND_PROP_VISIBLE) < 1:
+                break
+            number, mode = select_mode(key, mode)
 
     cap.release()
     cv.destroyAllWindows()

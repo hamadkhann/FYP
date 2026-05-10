@@ -9,7 +9,9 @@ class KeyPointClassifier(object):
         num_threads=1,
     ):
         self.interpreter = tf.lite.Interpreter(
-            model_path=model_path, num_threads=num_threads
+            model_path=model_path,
+            num_threads=num_threads,
+            experimental_delegates=[],
         )
 
         self.interpreter.allocate_tensors()
@@ -17,6 +19,13 @@ class KeyPointClassifier(object):
         self.output_details = self.interpreter.get_output_details()
 
     def __call__(
+        self,
+        landmark_list,
+    ):
+        result_index, _ = self.predict(landmark_list)
+        return result_index
+
+    def predict(
         self,
         landmark_list,
     ):
@@ -29,7 +38,6 @@ class KeyPointClassifier(object):
         output_details_tensor_index = self.output_details[0]["index"]
 
         result = self.interpreter.get_tensor(output_details_tensor_index)
-
-        result_index = np.argmax(np.squeeze(result))
-
-        return result_index
+        scores = np.squeeze(result).astype(np.float32)
+        result_index = int(np.argmax(scores))
+        return result_index, scores
